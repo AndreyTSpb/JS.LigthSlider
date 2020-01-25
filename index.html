@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slider.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <div class="row">
+        <div class="col-12" id="slider">
+            <!--THIS SLIDER-->
+          </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--ADD SLIDER Js-->
+    <script src="js/slider.js"></script>
+    <script>
+        /**
+         * Параметры для слайдера
+         * идентификатор, стили , ссылка на паку с картнками и перечень картинок
+         */
+        let params = {
+                idSlider:"slider", // идентификатор слайдера на странице
+                sec:5, //Интервал для перелистывания слайдера
+                indexShow:1, //Стартовая картинка
+                /*PARAMS CSS*/
+                classDivWraper:"slider",
+                classDivImgs:"carousel-inner",
+                classDivImg:"carousel-img",
+                classBtnPrev:"carousel-button-prev",
+                classBtnNext:"carousel-button-next",
+                classDivDots:"carousel-dots",
+                
+                /* IMGS */
+                img_folder:"img/slider_imgs", // folders with images files
+                imgs_name:['1.jpg','2.jpg', '3.jpg'] // array with name files
+        }; 
+        slider(params);
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+/*СТИЛИ ДЛЯ СЛАЙДЕРА*/
+.slider{
+    position: relative; /*Обязательно чтобы у родительского блока стояло сыойство relative*/
+    max-height: 500px;
+    max-width: 1400px;
+}
+
+/*button next and prev*/
+.slider .carousel-button-prev{
+    font-size: 5em; /*Размер шрифта , толщина и цвет шрифта*/
+    font-weight: bold; 
+    color: darkgrey;
+    /* выставляем стрелки по центру вертикали родительского элемента*/
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.slider .carousel-button-next{
+    font-size: 5em; /*Размер шрифта , толщина и цвет шрифта*/
+    font-weight: bold; 
+    color: darkgrey;
+    position: absolute;
+    /* выставляем стрелки по центру вертикали родительского элемента*/
+    left: 95%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.slider .carousel-button-next:hover, 
+.slider .carousel-button-prev:hover{
+    color: white;
+    font-size: 5.5em;
+}
+
+/*DOTES INDICATOR*/
+.slider .carousel-dots{
+    font-size: 3em; /*Размер шрифта , толщина и цвет шрифта*/
+    font-weight: bold; 
+    color: darkgrey;
+    position: absolute;
+    /* выставляем стрелки по центру горизонта родительского элемента*/
+    left: 50%;
+    top: 85%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.slider .carousel-dots ol{
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+.slider .carousel-dots li{
+    list-style-type: none;/* Убираем маркеры */
+    display: inline; /* Отображать как строчный элемент */
+    cursor: pointer;
+}
+.slider .carousel-dots li:hover{
+    color: white;
+}
+.slider .carousel-dots li.active{
+    color: white;
+    cursor: default;
+}
